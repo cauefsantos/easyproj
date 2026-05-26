@@ -10,7 +10,9 @@
     "dev": "npm run services:up && next dev",
     "services:up": "docker compose -f infra/compose.yaml up -d",
     "services:down": "docker compose -f infra/compose.yaml down",
-    "services:stop": "docker compose -f infra/compose.yaml stop"
+    "services:stop": "docker compose -f infra/compose.yaml stop",
+    "test": "jest --runInBand",
+    "test:watch": "jest --watch --runInBand"
   },
   "dependencies": {
     "next": "^16.2.6",
@@ -18,7 +20,10 @@
     "react-dom": "^19.2.6"
   },
   "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.2",
     "jest": "^30.4.2",
+    "jest-environment-jsdom": "^30.4.1",
     "prettier": "^3.8.3"
   }
 }
