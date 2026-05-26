@@ -1,5 +1,6 @@
 services:
   database:
+    container_name: easyproj-development
     image: postgres:18.4
     env_file:
       - ../.env.development
