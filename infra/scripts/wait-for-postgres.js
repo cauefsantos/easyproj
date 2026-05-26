@@ -3,7 +3,7 @@ const { exec } = require("child_process");
 function checkPostgresConnection() {
   exec(
     "docker exec easyproj-development pg_isready --host localhost",
-    handleConnectionCheck,
+    handleConnectionCheck
   );
 
   function handleConnectionCheck(error, stdout) {
