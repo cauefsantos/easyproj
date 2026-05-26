@@ -1,7 +1,7 @@
 services:
   database:
     container_name: easyproj-development
-    image: postgres:18.4
+    image: postgres:18.4-alpine3.23
     env_file:
       - ../.env.development
     ports:
