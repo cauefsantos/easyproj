@@ -1,0 +1,12 @@
+name: Automated Tests
+on: [pull_request]
+jobs:
+  jest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: lts/krypton
+      - run: npm ci
+      - run: npm test
