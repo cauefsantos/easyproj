@@ -5,7 +5,7 @@ async function waitForServices() {
 
   async function waitForWebServer() {
     return retry(fetchStatusPage, {
-      retries: 5,
+      retries: 100,
       maxTimeout: 1000,
     });
   }
