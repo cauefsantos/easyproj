@@ -36,10 +36,10 @@
     "eslint": "9.39.4",
     "eslint-config-next": "16.2.6",
     "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-jest": "28.14.0",
+    "eslint-plugin-jest": "29.15.2",
     "jest": "30.4.2",
     "jest-environment-jsdom": "30.4.1",
-    "node-pg-migrate": "7.9.1",
+    "node-pg-migrate": "8.0.4",
     "prettier": "3.8.3"
   }
 }
